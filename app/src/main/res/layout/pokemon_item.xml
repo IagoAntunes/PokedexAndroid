@@ -9,9 +9,11 @@
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toTopOf="parent"
     android:layout_margin="16dp"
+    android:id="@+id/card_pokemon"
     >
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ctr_card"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingBottom="8dp"
@@ -20,10 +22,9 @@
 
         <ImageView
             android:id="@+id/ivPokemon"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
             android:contentDescription="Pokemon Image"
-            android:src="@drawable/charmander"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -49,36 +50,7 @@
             app:layout_constraintStart_toStartOf="@+id/ivPokemon"
             app:layout_constraintTop_toBottomOf="@+id/tvNumber" />
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            app:layout_constraintEnd_toEndOf="@id/ivPokemon"
-            app:layout_constraintStart_toStartOf="@+id/ivPokemon"
-            app:layout_constraintTop_toBottomOf="@+id/tvName">
 
-            <TextView
-                android:id="@+id/tvType1"
-                android:layout_width="130dp"
-                android:layout_height="wrap_content"
-                android:background="#FD7D24"
-                android:text="Fire"
-                android:textAlignment="center"
-                android:textColor="#FFFFFF"
-                android:textSize="12sp" />
-
-            <TextView
-                android:id="@+id/tvType2"
-                android:layout_width="130dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:background="#FD7D24"
-                android:text="Fire"
-                android:textAlignment="center"
-                android:textColor="#FFFFFF"
-                android:textSize="12sp" />
-
-        </LinearLayout>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
