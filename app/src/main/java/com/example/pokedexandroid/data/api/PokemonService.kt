@@ -1,7 +1,7 @@
-package com.example.pokedexandroid.api
+package com.example.pokedexandroid.data.api
 
-import com.example.pokedexandroid.api.model.PokemonApiResult
-import com.example.pokedexandroid.api.model.PokemonsApiResult
+import com.example.pokedexandroid.data.api.model.PokemonApiResult
+import com.example.pokedexandroid.data.api.model.PokemonsApiResult
 import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Path

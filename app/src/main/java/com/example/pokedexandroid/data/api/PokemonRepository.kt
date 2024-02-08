@@ -1,8 +1,8 @@
-package com.example.pokedexandroid.api
+package com.example.pokedexandroid.data.api
 
 import android.util.Log
-import com.example.pokedexandroid.api.model.PokemonApiResult
-import com.example.pokedexandroid.api.model.PokemonsApiResult
+import com.example.pokedexandroid.data.api.model.PokemonApiResult
+import com.example.pokedexandroid.data.api.model.PokemonsApiResult
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -11,7 +11,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 object PokemonRepository {
     // https://pokeapi.co/api/v2/pokemon/?limit=151
-    private val service:PokemonService
+    private val service: PokemonService
     init{
         val retrofit = Retrofit.Builder()
             .baseUrl("https://pokeapi.co/api/v2/")

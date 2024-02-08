@@ -12,7 +12,8 @@
         android:theme="@style/Theme.PokedexAndroid"
         tools:targetApi="31">
         <activity
-            android:name=".view.MainActivity"
+            android:name=".presenter.view.MainActivity"
+            android:windowSoftInputMode="adjustPan"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

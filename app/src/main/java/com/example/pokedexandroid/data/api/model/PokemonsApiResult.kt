@@ -1,4 +1,4 @@
-package com.example.pokedexandroid.api.model
+package com.example.pokedexandroid.data.api.model
 
 import com.example.pokedexandroid.domain.Pokemon
 import com.example.pokedexandroid.domain.PokemonTypes
